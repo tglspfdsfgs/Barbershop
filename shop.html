@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп "Бородинский"</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normilize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+	<nav class="main-nav">
+		<a>
+		<img src="img/index-logo.png" height="155px" width="371px" alt="Логотип барбершопа &laquo;Бородинский&raquo;">
+		</a>
+		<ul class="site-nav">
+			<li><a class="nav-link" href="info.html">Информация</a></li>
+			<li><a class="nav-link" href="news.html">Новости</a></li>
+			<li><a class="nav-link" href="price.html">Прайс-лист</a></li>
+			<li><a class="nav-link" href="catalog.html">Магазин</a></li>
+			<li><a class="nav-link" href="contacts">Контакты</a></li>
+		</ul>
+		<ul class="user-nav">
+			<li><a href="#" class="login-link">Войти</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<main class="container">
+		<section class="head">	
+			<h1>Средства для ухода</h1>
+			<ul class="road-map">
+				<li><a href="#">Главная</a></li>
+				<li><a>Средства для ухода</a></li>
+			</ul>
+		</section>
+		<section class="content">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+				<legend>Производители:</legend>
+				<input class="visualy-hidden" type="checkbox" id="producer-baxter-of-california" name="baxter-of-california">
+				<label class="producer-checkbox" for="producer-baxter-of-california">
+					<span class="checkbox-indicator"></span>Baxter of California</label>
+
+				<input class="visualy-hidden" type="checkbox" id="producer-mr-natty" name="mr-natty">
+				<label class="producer-checkbox" for="producer-mr-natty">
+					<span class="checkbox-indicator"></span>Mr Natty</label>
+
+				<input class="visualy-hidden" type="checkbox" id="producer-suavecito" name="suavecito">
+				<label class="producer-checkbox" for="producer-suavecito">
+					<span class="checkbox-indicator"></span>Suavecito</label>
+
+				<input class="visualy-hidden" type="checkbox" id="producer-malin-goetz" name="malin-goetz">
+				<label class="producer-checkbox" for="producer-malin-goetz">
+					<span class="checkbox-indicator"></span>Malin+Goetz</label>
+
+				<input class="visualy-hidden" type="checkbox" id="producer-murrays" name="murrays">
+				<label class="producer-checkbox" for="producer-murrays">
+					<span class="checkbox-indicator"></span>Murray's</label>
+
+				<input class="visualy-hidden" type="checkbox" id="producer-american-crew" name="american-crew">
+				<label class="producer-checkbox" for="producer-american-crew">
+					<span class="checkbox-indicator"></span>American Crew</label>
+				</fieldset>
+
+				<fieldset>
+				<legend>Группы товаров:</legend>
+				<input class="visualy-hidden" type="radio" id="product-group-shaving" value="shaving" name="product-group">
+				<label class="product-group-radio" for="product-group-shaving">
+					<span class="radio-indicator"></span>Бритвенные принадлежности</label>
+
+				<input class="visualy-hidden" type="radio" id="product-group-caring" value="caring" name="product-group">
+				<label class="product-group-radio" for="product-group-caring">
+					<span class="radio-indicator"></span>Средства для ухода</label>
+
+				<input class="visualy-hidden" type="radio" id="product-group-accessories" value="accessories" name="product-group">
+				<label class="product-group-radio" for="product-group-accessories">
+					<span class="radio-indicator"></span>Аксессуары</label>
+				</fieldset>
+				<button class="button" type="submit">Показать</button>
+			</form>
+
+			<section class="catalog">
+				<article class="goods">
+					<a href="#">
+						<img src="img/set_for_the_traveler/set_for_the_traveler_preview.jpg" alt="">
+						<p>Набор для путешествий<br>«Baxter of California»</p>
+					</a>
+					<span class="price">2 900 руб</span><button class="button">Купить</button>
+				</article>
+
+				<article class="goods">
+					<a href="#">
+						<img src="img/hair_conditioner/hair_conditioner_preview.jpg" alt="">
+						<p>Увлажняющий кондеционер<br>«Baxter of California»</p>
+					</a>
+					<span class="price">750 руб</span><button class="button">Купить</button>
+				</article>
+
+				<article class="goods">
+					<a href="#">
+						<img src="img/hair_gel/hair_gel_preview.jpg" alt="">
+						<p>Гель для волос<br>«Suavecito»</p>
+					</a>
+					<span class="price">290 руб</span><button class="button">Купить</button>
+				</article>
+
+				<article class="goods">
+					<a href="#">
+						<img src="img/molding_clay/molding_clay_preview.jpg" alt="">
+						<p>Глина для укладки волос<br>«American Crew»</p>
+					</a>
+					<span class="price">500 руб</span><button class="button">Купить</button>
+				</article>
+				
+				<article class="goods">
+					<a href="#">
+						<img src="" alt="">
+						<p>Гель для бритья<br>«American Crew»</p>
+					</a>
+					<span class="price">300 руб</span><button class="button">Купить</button>
+				</article>
+
+				<article class="goods">
+					<a href="#">
+						<img src="img/shaving_gel/shaving_gel_preview.jpg" alt="">
+						<p>Набор для бритья<br>«Baxter of California»</p>
+					</a>
+					<span class="price">3 900 руб</span><button class="button">Купить</button>
+				</article>
+			</section>
+
+			<div class="pagination">
+				<a>1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+			</div>
+		
+		</section>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+	<p class="footer-contacts">
+		Барбершоп &laquo;Бородинский&raquo;<br>
+		Адрес: г. Санкт-Петербург, ул. Большая Конюшенная Д, 19/8<br>
+		<a href="map.html">Как нас найти?</a><br>
+		Телефон: +7 (495) 666-02-66 
+	</p>
+	<div class="footer-socials">
+		<p>Давайте дружить!</p>
+		<ul>
+			<li><a class="social-button" href="#">Вконтакте</a></li>
+			<li><a class="social-button" href="#">Инстаграм</a></li>
+			<li><a class="social-button" href="#">Фейсбук</a></li>
+		</ul>
+	</div>
+	<p class="footer-copyright">
+		Разработано:
+		<a class="button" href="#">TGLSP FGSFDS</a>
+	</p>
+	</footer>
+</body>
+</html>
