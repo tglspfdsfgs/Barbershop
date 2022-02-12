@@ -13,6 +13,19 @@ body {
 	background-repeat: no-repeat;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -44,6 +57,7 @@ a {
 .site-nav,
 .user-nav {
 	list-style: none;
+	padding-left: 0;
 }
 .nav-link,
 .login-link {
@@ -55,10 +69,6 @@ a {
 .nav-link:focus,
 .login-link:focus {
 	background-color: #242424;
-}
-
-.features-list {
-	list-style: none;
 }
 
 .features .list-item {
@@ -86,7 +96,9 @@ a {
 
 .news-list {
 	list-style: none;
+	padding-left: 0;
 }
+
 
 .news-date {
 	text-transform: none;
@@ -111,11 +123,33 @@ a {
 
 .main-footer {
 	color: #ffffff;
-
+	margin-top: 65px;
+	padding: 60px 0;
 	border-color: #212121;
 	background-image: url(../img/pattern-darckgray.png);
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.foot-container {
+	margin: 0 auto;
+	width: 940px;
+	display: flex;
+}
+
+.contacts {
+	width: 380px;
+}
+
+.appointment {
+	width: 300px;
+}
+
+
+.footer-contacts {
+	width: 320px;
+	margin: 0;
+	margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -130,10 +164,13 @@ a {
 
 .footer-socials {
 	text-align: center;
+	width: 145px;
+	margin: 0;
 }
 
 .footer-socials ul {
 	list-style: none;
+	padding-left: 0;
 }
 
 .social-button {
@@ -142,6 +179,9 @@ a {
 
 .footer-copyright {
 	text-align: center;
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
 }
 
 .footer-copyright .button:hover,
@@ -195,3 +235,72 @@ a {
 .restore:hover {
 	text-decoration: none;
 }
+
+.main-header {
+	height: 285px;
+}
+
+.main-header-logo {
+	width: 368px;
+	height: 153px;
+	order: 2;
+}
+
+.main-nav {
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-nav-wrap {
+	width: 100%;
+}
+
+.nav-container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 940px;
+}
+
+
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.figure-item {
+	width: 300px;
+}
+
+.news {
+	width: 380px;
+} 
+
+.gallery {
+	width: 300px;
+}
+
+.index-columns {
+	padding: 50px 80px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
