@@ -84,7 +84,7 @@ img {
 
 .site-nav a,
 .user-nav a {
-	display: block;
+	display: inline-block;
 	padding: 25px 20px;
 }
 
@@ -98,7 +98,6 @@ img {
 .main-nav-wrap {
 	width: 100%;
 	background-color: #000; 
-	
 
 }
 
@@ -128,7 +127,7 @@ img {
 .site-nav {
 	display: flex; 
 	flex-wrap: wrap;
-	width: 620px;
+	width: 730px;
 	height: 70px;
 	margin: 0;
 }
@@ -141,6 +140,8 @@ img {
 .site-nav .nav-link {
 	display: block;
 }
+
+
 
 
 .site-nav,
@@ -191,6 +192,20 @@ img {
 }
 
 
+.site-nav .mini-logo {
+	padding: 23px 20px 19px 20px;
+	
+}
+
+/*Overriding logo for all pages, that is not main page*/
+
+.site-nav .mini-logo:hover {
+	background-color: unset;
+}
+
+.main-header.not-mainpage {
+	height: 70px;
+}
 
 /*HEADER END*/
 
@@ -722,6 +737,10 @@ img {
 
 
 /*MODAL END*/
+.main-header-logo {
+	display: none;
+}
 
 
+/*HEADER OVERRIDE START*/
 
