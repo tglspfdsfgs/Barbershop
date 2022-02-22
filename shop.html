@@ -17,6 +17,13 @@
 		.container {
 			padding: 0;
 		}
+		.main-header-logo {
+			display: none;
+		}
+		.main-footer {
+			margin-top: 45px;
+			box-shadow: 0px 41px 20px -30px rgba(0, 0, 0, 1) inset;
+		}
 	</style>
 </head>
 <body>
@@ -28,12 +35,12 @@
 			<div class="main-nav-wrap">
 				<div class="nav-container">
 					<ul class="site-nav">
-						<li><a class="nav-link mini-logo" href="info.html"><img width="111px" height="24px" src="img/mini_logo.png"></a></li>
+						<li><a class="nav-link mini-logo" href="index.html"><img width="111px" height="24px" src="img/mini_logo.png"></a></li>
 						<li><a class="nav-link" href="info.html">Информация</a></li>
-						<li><a class="nav-link" href="news.html">Новости</a></li>
+						<li><a class="nav-link" href="#">Новости</a></li>
 						<li><a class="nav-link" href="price.html">Прайс-лист</a></li>
-						<li><a class="nav-link current-point" href="catalog.html">Магазин</a></li>
-						<li><a class="nav-link" href="contacts">Контакты</a></li>
+						<li><a class="nav-link current-point" href="shop.html">Магазин</a></li>
+						<li><a class="nav-link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="user-nav">
 						<li><a href="#" class="login-link">Войти</a></li>
@@ -47,18 +54,151 @@
 			<h1 class="page-title">Прайс-лист</h1>
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="index.html">Магазин</a></li>
+				<li><a href="shop.html">Магазин</a></li>
 				<li class="breadcrumbs-current"><a>Средства для ухода</a></li>
 			</ul>
-		</div>
+			<div class="content-wrapper">
+				<div class="first-sec">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<fieldset class="manufacturers">
 
+							<legend>Производители:</legend>
+
+							<label class="search-checkbox" for="baxter-of-california">
+							<input class="visually-hidden" type="checkbox" id="baxter-of-california" name="baxter-of-california" checked>
+							<span class="checkbox-indicator"></span>Baxter of California</label>
+
+							<label class="search-checkbox" for="mr-natty">
+							<input class="visually-hidden" type="checkbox" id="mr-natty" name="mr-natty">
+							<span class="checkbox-indicator"></span>Mr Natty</label>
+
+							<label class="search-checkbox" for="suavecito">
+							<input class="visually-hidden" type="checkbox" id="suavecito" name="suavecito" checked>
+							<span class="checkbox-indicator"></span>Suavecito</label>
+
+							<label class="search-checkbox" for="malin-goetz">
+							<input class="visually-hidden" type="checkbox" id="malin-goetz" name="malin-goetz">
+							<span class="checkbox-indicator"></span>Malin+Goetz</label>
+
+							<label class="search-checkbox" for="murrays">
+							<input class="visually-hidden" type="checkbox" id="murrays" name="murrays">
+							<span class="checkbox-indicator"></span>Murray’s</label>
+
+							<label class="search-checkbox" for="american-crew">
+							<input class="visually-hidden" type="checkbox" id="american-crew" name="american-crew" checked>
+							<span class="checkbox-indicator"></span>American Crew</label>
+
+						</fieldset>
+
+						<fieldset class="groups-of-items">
+							<legend>Группы товаров:</legend>
+
+							<label class="search-radio" for="shave-accessories">
+							<input class="visually-hidden" type="radio" id="shave-accessories" name="itemsgroup" value="shave-accessories">
+							<span class="checkbox-indicator"></span>Бритвенные<br>принадлежности</label>
+
+							<label class="search-radio" for="means-for-care">
+							<input class="visually-hidden" type="radio" id="means-for-care" name="itemsgroup" value="means-for-care" checked>
+							<span class="checkbox-indicator"></span>Средства для ухода</label>
+
+							<label class="search-radio" for="accessories">
+							<input class="visually-hidden" type="radio" id="accessories" name="itemsgroup" value="accessories">
+							<span class="checkbox-indicator"></span>Аксессуары</label>
+						</fieldset>
+
+						<button class="button" type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="second-sec">
+					<section class="catalog">
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+									<img src="img/set_for_the_traveler/set_for_the_traveler_card.jpg">
+									<figcaption><span class="items-purpose">Набор для путешествий</span><br>«Baxter of California»</figcaption>
+									</figure>
+								</a>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">2 900 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+									<img src="img/hair_conditioner/hair_conditioner_card.jpg">
+									<figcaption><span class="items-purpose">Увлажняющий кондиционер</span><br>«Baxter of California»</figcaption>
+								</a>
+							</figure>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">750 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+							<img src="img/hair_gel/hair_gel_card.jpg">
+							<figcaption><span class="items-purpose">Гель для волос</span><br>«SUAVECITO»</figcaption>
+								</a>
+							</figure>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">290 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+							<img src="img/molding_clay/molding_clay_card.jpg">
+							<figcaption><span class="items-purpose">Глина для укладки волос</span><br>«American crew»</figcaption>
+								</a>
+							</figure>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">500 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+							<img src="img/shaving_gel/shaving_gel_card.jpg">
+							<figcaption><span class="items-purpose">Гель для волос</span><br>«AMERICAN CREW»</figcaption>
+								</a>
+							</figure>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">300 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+
+						<article class="item-card">
+							<figure>
+								<a class="item-link" href="Set_for_the_traveler.html">
+							<img src="img/shaving_set/shaving_set_card.jpg">
+							<figcaption><span class="items-purpose">Набор для бритья</span><br>«Baxter of California»</figcaption>
+								</a>
+							</figure>
+							<div class="price-and-btn-sec">
+								<span class="price-near-btn">3 900 ₽</span><a class="btn-near-price button" href="#">Купить</a>
+							</div>
+						</article>
+					</section>
+					<div class="page-navigation">
+						<a class="button" href="#">1</a>
+						<a class="button current">2</a>
+						<a class="button" href="#">3</a>
+						<a class="button" href="#">4</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="foot-container">
 			<p class="footer-contacts">
 				Барбершоп &laquo;Бородинский&raquo;<br>
 				Адрес: г. Санкт-Петербург, ул. Большая Конюшенная Д, 19/8<br>
-				<a href="map.html">Как нас найти?</a><br>
+				<a class="footer-mapscall" href="map.html">Как нас найти?</a><br>
 				Телефон: +7 (495) 666-02-66 
 			</p>
 			<div class="footer-socials">
@@ -75,15 +215,10 @@
 			</p>
 		</div>
 	</footer>
-
-
-
-
-
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p class="modal-descrition">Введите свой логин и пароль.</p>
-		<form class="login-form" action="echo.htmlacademy.ru" method="post">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
 				<input type="email" id="user-login" name="login" placeholder="email@example.com">
@@ -106,10 +241,11 @@
 
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<p>
-			<img src="img/map_766w_560h.png" width="766px" height="560px" align="Офиск компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-		</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1645203346796!5m2!1sru!2sua" width="766px" height="560px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
+
+	<script src="scripts/popup.js"></script>
+	<script src="scripts/footermapscall.js"></script>
 </body>
 </html>

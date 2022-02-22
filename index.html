@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
 	<header class="main-header">
 		<nav class="main-nav">
 			<a class="main-header-logo">
@@ -19,10 +18,10 @@
 				<div class="nav-container">
 					<ul class="site-nav">
 						<li><a class="nav-link" href="info.html">Информация</a></li>
-						<li><a class="nav-link" href="news.html">Новости</a></li>
+						<li><a class="nav-link" href="#">Новости</a></li>
 						<li><a class="nav-link" href="price.html">Прайс-лист</a></li>
-						<li><a class="nav-link" href="catalog.html">Магазин</a></li>
-						<li><a class="nav-link" href="contacts">Контакты</a></li>
+						<li><a class="nav-link" href="shop.html">Магазин</a></li>
+						<li><a class="nav-link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="user-nav">
 						<li><a href="#" class="login-link">Войти</a></li>
@@ -103,7 +102,7 @@
 		<section class="appointment">
 			<h2>Записаться</h2>
 			<p class="appointment-info">Укажите желаемую дату и мы свяжемся с вами для подтверждения брони</p>
-			<form class="appointment-form" action="echo.htmlacademy.ru" method="post">
+			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
 				<p class="appointment-item">
 					<label for="appointment-date">Дата</label>
 					<input type="date" id="appointment-date" name="date" value="2022-10-08">
@@ -148,15 +147,10 @@
 			</p>
 		</div>
 	</footer>
-
-
-
-
-
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p class="modal-descrition">Введите свой логин и пароль.</p>
-		<form class="login-form" action="echo.htmlacademy.ru" method="post">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
 				<input type="email" id="user-login" name="login" placeholder="email@example.com">

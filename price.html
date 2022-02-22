@@ -13,9 +13,14 @@
 				background-position: 0 0;
 				background-repeat: repeat;
 		}
-
 		.container {
 			padding: 0;
+		}
+		.main-header-logo {
+			display: none;
+		}
+		.main-footer {
+			box-shadow: 0px 41px 20px -30px rgba(0, 0, 0, 1) inset;
 		}
 	</style>
 </head>
@@ -30,10 +35,10 @@
 					<ul class="site-nav">
 						<li><a class="nav-link mini-logo" href="index.html"><img width="111px" height="24px" src="img/mini_logo.png"></a></li>
 						<li><a class="nav-link" href="info.html">Информация</a></li>
-						<li><a class="nav-link" href="news.html">Новости</a></li>
+						<li><a class="nav-link" href="#">Новости</a></li>
 						<li><a class="nav-link current-point" href="price.html">Прайс-лист</a></li>
-						<li><a class="nav-link" href="catalog.html">Магазин</a></li>
-						<li><a class="nav-link" href="contacts">Контакты</a></li>
+						<li><a class="nav-link" href="shop.html">Магазин</a></li>
+						<li><a class="nav-link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="user-nav">
 						<li><a href="#" class="login-link">Войти</a></li>
@@ -90,19 +95,14 @@
 					<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
 				</section>
 			</section>
-
-
-
-
 		</div>
-
 	</main>
 	<footer class="main-footer">
 		<div class="foot-container">
 			<p class="footer-contacts">
 				Барбершоп &laquo;Бородинский&raquo;<br>
 				Адрес: г. Санкт-Петербург, ул. Большая Конюшенная Д, 19/8<br>
-				<a href="map.html">Как нас найти?</a><br>
+				<a class="footer-mapscall" href="map.html">Как нас найти?</a><br>
 				Телефон: +7 (495) 666-02-66 
 			</p>
 			<div class="footer-socials">
@@ -119,15 +119,10 @@
 			</p>
 		</div>
 	</footer>
-
-
-
-
-
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p class="modal-descrition">Введите свой логин и пароль.</p>
-		<form class="login-form" action="echo.htmlacademy.ru" method="post">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
 				<input type="email" id="user-login" name="login" placeholder="email@example.com">
@@ -150,10 +145,11 @@
 
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<p>
-			<img src="img/map_766w_560h.png" width="766px" height="560px" align="Офиск компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-		</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1645203346796!5m2!1sru!2sua" width="766px" height="560px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
+
+	<script src="scripts/popup.js"></script>
+	<script src="scripts/footermapscall.js"></script>
 </body>
 </html>
