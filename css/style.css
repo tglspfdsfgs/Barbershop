@@ -1227,7 +1227,7 @@ img {
 .item-card figcaption {
 	margin-bottom: 10px;
 	margin-left: 16px;
-
+	color: #000;
 }
 .item-card .price-and-btn-sec {
 	margin-left: 16px;
